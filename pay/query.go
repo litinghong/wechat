@@ -39,6 +39,8 @@ type OrderQueryResult struct {
 	Attach        string `xml:"attach"`
 	TimeEnd       string `xml:"time_end"`
 	TradeState    string `xml:"trade_state"`
+	ErrCodeDes    string `xml:"err_code_des"`
+	ErrCode       string `xml:"err_code"`
 }
 
 func (pcf *Pay) OrderQuery(outTradeNo string) (result *OrderQueryResult, err error) {
